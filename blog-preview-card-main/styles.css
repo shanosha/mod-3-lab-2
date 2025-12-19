@@ -34,6 +34,7 @@ main {
 }
 .description {
     color: #555555;
+    line-height: 22px;
 }
 .title {
     font-weight: 800;
