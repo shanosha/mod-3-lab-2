@@ -1,49 +1,129 @@
-body{
-    background:hsl(47, 88%, 63%);
-    
-    font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 14px;
+/* Mobile styles -- 375px  */
+body {
+  margin: 0;
+  padding: 20px;
+  font-size: 16px;
 }
+/* comment tailwind css
+/* body
+/* m-0 p-5 text-[16px] */
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%; /*flex for mobile */
+  max-width: 375px;
+  margin: 0 auto;
 }
-#blogpreview {
-    background: #FFFFFF;
-    padding: 20px;
-    border:1px solid #000000;
-    border-radius: 20px;
-    max-width: 300px;
-    margin-bottom: 20px;
-    box-shadow: 10px 10px 0px #000000;
+/*main
+/* w-full max-w-[375px] mx-auto */
+
+/* Desktop styles -- 1440px or + */
+@media (main-width: 1440px) {
+  main {
+    max-width: 1128px; /* to taget 1440 px */
+    padding: 0 156px; /* margins for 1440px layout */
+  }
+  /* main
+  /* min-[1440px]:max-w-[1128px] min-[1440px]:px-[156px] */
+
+  body {
+    font-size: 18px;
+  }
+  /* body
+  /* min-[1440px]:text-[18px] */
 }
-#previewimg {
-    border-radius: 10px;
-    width: 100%;
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
-.category {
-    display: inline-block;
-    background-color: hsl(47, 88%, 63%);
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-weight: 800;
+/* text-[11px] text-center */
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
-.description {
-    color: #555555;
+/* text-[hsl(228,45%,44%)] */
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Figtree", sans-serif;
 }
-.title {
-    font-weight: 800;
-    font-size:22px;
+/* body
+/* bg-[hsl(47,88%,63%)] flex flex-col justify-center items-center min-h-screen m-0 font-['Figtree',sans-serif] */
+
+main {
+  max-width: 384px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  border: 0.5px solid hsl(0, 0%, 7%);
+  box-shadow: 5px 5px 0px hsl(0, 0%, 7%);
 }
-#avatar {
-    width:50px;
-    margin-right: 10px;
-    float:left;
+/* main
+/* max-w-[384px] bg-[hsl(0,0%,100%)] flex justify-center items-center rounded-[20px] p-[20px] border-[0.5px] border-[hsl(0,0%,7%)] shadow-[5px_5px_0px_hsl(0,0%,7%)] */
+
+div img {
+  width: 100%;
+  border-radius: 10px;
 }
-#author {
-    display: flex;
-    font-weight: bold;
+/* img
+/* w-full rounded-[10px] */
+
+section p:first-of-type {
+  display: inline-block;
+  background: hsl(47, 88%, 63%);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 900;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
+/*p
+/* inline-block bg-[hsl(47,88%,63%)] py-[5px] px-[10px] rounded-[4px] font-black mb-[0.4em] */
+section h1 {
+  font-size: 24px;
+  color: hsl(0, 0%, 7%);
+}
+/* h1
+/* text-[24px] text-[hsl(0,0%,7%)] */
+
+section p:nth-of-type(2) {
+  font-weight: 400;
+  margin-top: 0.4em;
+}
+/* second p inside section
+/* font-normal mt-[0.4em] */
+
+section p:nth-of-type(3) {
+  color: hsl(0, 0%, 42%);
+  font-size: 18px;
+}
+/* third p
+/* text-[hsl(0,0%,42%)] text-[18px] */
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+/*footer
+/* flex items-center gap-[10px] mt-[20px] */
+.author img {
+  width: 32px;
+  height: 32px;
+}
+/* img
+/* w-8 h-8 */
+.author p {
+  font-weight: 900;
+}
+/* p inside footer
+/* font-black */
