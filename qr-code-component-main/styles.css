@@ -1,37 +1,58 @@
-/* .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); } */
+ .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } 
 body {
   background-color: #D6E1F0;
-  
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-main {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  /* font-optical-sizing: auto;
+  font-style: normal; */
 }
-.container {
-  width: 300px;
-  background-color: hsl(0, 0%, 100%);
-  align-items: center;
-  border-radius:10px;
-  padding:16px;
-}
-.qr-container img {
-  width:100%;
-  border-radius:10px;  
-}
-.text-container p:first-of-type {
-  font-weight: bold;
-  font-size:24px;
-  color: #000000;
-}
+/* body... 
+/* bg-[#D6E1F0] flex flex-col justify-center items-center min-h-screen m-0 font-['Outfit',_sans-serif] text-[16px] */
 
-.text-container p {
+main {
+  max-width: 384px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 22px;
+}
+/* main
+/* "max-w-sm bg-white flex justify-center items-center rounded-[20px] p-[22px]" */
+
+div img {
+  width:100%;
+  border-radius:20px;  
+}
+/* img
+/* w-full rounded-[20px] */
+
+section {
+text-align: center;
+padding: 0 23px;
+}
+/* section
+/* text-center px-[23px] py-0 */
+
+section h1 {
+  font-size: 29px;
+  color:  hsl(0, 0%, 7%);
+}
+/* h1
+/* text-[29px] text-[#121212] */
+
+section p {
   text-align: center;
   color: #555555;
-  font-size: 15px;
+  font-size: 20px;
 }
+/* p
+/* text-center text-[#555555] text-xl */
